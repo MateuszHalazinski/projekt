@@ -14,6 +14,7 @@
 </head>
 <body>
 	<div class="container">
+		<h2>Dodaj użytkownika</h2>
 	<form action="store_user.php" method="post">
 		<label>Imię: <input type="text" name="imie" value="<?= htmlspecialchars($formData['imie'] ?? '') ?>" required></label><br><br>
 		<label>Nazwisko: <input type="text" name="nazwisko" value="<?= htmlspecialchars($formData['nazwisko'] ?? '') ?>" required></label><br><br>
@@ -30,7 +31,7 @@
 		
 			
 
-			<button type="submit">Zapisz</button>
+			<button type="submit" class="btn-save">Zapisz</button>
 	</form>
     </div>
 	<br>

@@ -10,10 +10,8 @@ h2 {
     
 }
 
-
-
 .container{
-    max-width: 600px;
+    max-width: 500px;
     margin: 50px auto;
     padding: 30px;
     background-color: white;
@@ -96,4 +94,54 @@ a.detail-link:hover {
 	background-color: #5a5a5a;
 	color: white;
 	cursor: pointer;
+}
+
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    margin: 0 auto;
+}
+label {
+    margin-top: 15px;
+    font-weight: bold;
+    color: #333;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="number"],
+select {
+    padding: 10px;
+    border: 1px solid #000000;
+    border-radius: 10px;
+    font-size: 14px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+textarea {
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #000000;
+    border-radius: 5px;
+    font-size: 14px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.btn-save {
+    margin-top: 5px;
+    background-color: #28a745;  
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.btn-save:hover {
+    background-color: #218838;
 }

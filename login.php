@@ -72,7 +72,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     <form action="login.php" method="post">
         <label>Login: <input type="text" name="username" required></label><br>
         <label>Hasło: <input type="password" name="password" required></label><br>
-        <button type="submit">Zaloguj się</button>
+        <button type="submit" class="btn-save">Zaloguj się</button>
     </form>
     <div>
 </body>

@@ -39,8 +39,9 @@
 				&#x2705 Użytkownik został pomyślnie usunięty
 			</div>
 		<?php endif; ?>
-		<h2>Lista użytkowników</h2>
+		
 		<div class="container">
+			<h2>Lista użytkowników</h2>
 		<table>
 			<tr>
 				<th>ID</th><th>Imie</th><th>Nazwisko</th><th>Rola</th>

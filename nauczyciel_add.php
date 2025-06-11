@@ -22,7 +22,7 @@
 			<textarea name="komentarz" cols="50" rows="4"><?= htmlspecialchars($formData['komentarz'] ?? '') ?></textarea>
 		</label><br><br>
 
-		<button type="submit">Zapisz</button>
+		<button type="submit" class="btn-save">Zapisz</button>
 	</form>
     </div>
 	<button class="btn-back" onclick="window.location.href='nauczyciel.php'">Wróć</button>

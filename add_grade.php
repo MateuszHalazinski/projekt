@@ -14,6 +14,7 @@
 </head>
 <body>
 	<div class="container">
+	<h2>Dodaj ocene</h2>
 	<form action="store_grade.php" method="post">
 		<label>ID ucznia: <input type="number" name="id_ucznia" value="<?= htmlspecialchars($formData['id_ucznia'] ?? '') ?>" required></label><br><br>
 		<label>Ocena (np. 4.5): <input type="number" step="0.1" name="ocena" value="<?= htmlspecialchars($formData['ocena'] ?? '') ?>" required></label><br><br>
@@ -22,7 +23,7 @@
 			<textarea name="komentarz" cols="50" rows="4"><?= htmlspecialchars($formData['komentarz'] ?? '') ?></textarea>
 		</label><br><br>
 
-		<button type="submit">Zapisz</button>
+		<button type="submit" class="btn-save">Zapisz</button>
 	</form>
 </div>
 	<br>

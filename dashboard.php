@@ -15,7 +15,6 @@ if (!isset($_SESSION["user"]) || $_SESSION["user"]["rola"] !== 'admin') {
     <title>Panel administratora</title>
 </head>
 <body>
-    <h2>Witaj, <?php echo htmlspecialchars($_SESSION["user"]["login"]); ?> (<?php echo $_SESSION["user"]["rola"]; ?>)</h2>
     <div class="container">
     <h2>Panel administratora</h2>
     <button class="btn-go" onclick="window.location.href='list_user.php'">Użytkownicy</button>
