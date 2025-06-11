@@ -1,0 +1,99 @@
+body {
+  font-family: Arial, sans-serif;
+	margin: 20px;
+	background-color: #ebebeb;
+    text-align: center;
+}
+
+h2 {
+	color: #333;
+    
+}
+
+
+
+.container{
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 30px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+table {
+	border-collapse: collapse;
+	width: 100%;
+	background-color: #fff;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+}
+
+th, td {
+	border: 1px solid #ddd;
+	padding: 10px;
+	text-align: center;
+}
+
+th {
+	background-color: #f0f0f0;
+	font-weight: bold;
+}
+
+a.detail-link {
+	color: #093568;
+	text-decoration: none;
+}
+
+a.detail-link:hover {
+	text-decoration: underline;
+}
+
+.details {
+	margin-top: 30px;
+	padding: 15px;
+	background-color: #eef;
+	border: 1px solid #aac;
+}
+
+.delete-link {
+	color: #d60000;
+	text-decoration: none;
+	font-weight: bold;	
+	border: 1px solid #d60000;
+	border-radius: 4px;
+}
+
+.delete-link:hover {
+	background-color: #d60000;
+	color: white;
+	cursor: pointer;
+}
+
+.btn-go {
+    background-color: #0066cc;
+    color: white;
+    width: 150px;
+    padding: 10px 0;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+   
+}
+
+.btn-back{
+        background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    width: 150px;
+    padding: 10px 0;
+    border: 1px solid #333;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.btn-back:hover {
+	background-color: #5a5a5a;
+	color: white;
+	cursor: pointer;
+}
