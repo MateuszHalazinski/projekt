@@ -16,16 +16,19 @@
 	<div class="container">
 		<h2>Dodaj użytkownika</h2>
 	<form action="store_user.php" method="post">
-		<label>Imię: <input type="text" name="imie" value="<?= htmlspecialchars($formData['imie'] ?? '') ?>" required></label><br><br>
-		<label>Nazwisko: <input type="text" name="nazwisko" value="<?= htmlspecialchars($formData['nazwisko'] ?? '') ?>" required></label><br><br>
+		<label>Imię: <input type="text" name="imie" value="<?= htmlspecialchars($formData['imie'] ?? '') ?>" required pattern="^[A-Za-zĄĆĘŁŃÓŚŹŻąćęłńóśźż]{2,50}$"
+        title="Imię może zawierać tylko litery, bez cyfr i znaków specjalnych (2–50 znaków)"></label><br><br>
+		<label>Nazwisko: <input type="text" name="nazwisko" value="<?= htmlspecialchars($formData['nazwisko'] ?? '') ?>" required pattern="^[A-Za-zĄĆĘŁŃÓŚŹŻąćęłńóśźż]{2,50}$"
+        title="Nazwisko może zawierać tylko litery, bez cyfr i znaków specjalnych (2–50 znaków)"></label><br><br>
 		<label>Login: <input type="text" name="login" value="<?= htmlspecialchars($formData['login'] ?? '') ?>" required></label><br><br>
-		<label>Hasło: <input type="text" name="haslo" value="<?= htmlspecialchars($formData['haslo'] ?? '') ?>" required></label><br><br>
+		<label>Hasło: <input type="text" name="haslo" value="<?= htmlspecialchars($formData['haslo'] ?? '') ?>" required pattern="^(?=.*[A-Z]).{5,}$" 
+		title="Hasło musi mieć min. 5 znaków i zawierać przynajmniej 1 duża literę"></label><br><br>
 		<label>Rola:
 			<select name="rola" required>
 				<option value="">-- wybierz --</option>
 				<option value="admin" <?= ($formData['rola'] ?? '') === 'admin' ? 'selected' : '' ?>>admin</option>
 				<option value="nauczyciel" <?= ($formData['rola'] ?? '') === 'nauczyciel' ? 'selected' : '' ?>>nauczyciel</option>
-				<option value="uczeń" <?= ($formData['rola'] ?? '') === 'uczen' ? 'selected' : '' ?>>uczen</option>
+				<option value="uczeń" <?= ($formData['rola'] ?? '') === 'uczen' ? 'selected' : '' ?>>uczeń</option>
 			</select>
 		</label><br><br>
 		

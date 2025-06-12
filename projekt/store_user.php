@@ -6,7 +6,7 @@
 		$imie = trim($_POST['imie']);
 		$nazwisko = trim($_POST['nazwisko']);
 		$login = trim($_POST['login']);
-		$haslo = trim($_POST['haslo']);
+		$haslo = password_hash(trim($_POST['haslo']), PASSWORD_DEFAULT);
 		$rola = trim($_POST['rola']);
 
 		if ($imie && $nazwisko && $login && $haslo && $rola) {

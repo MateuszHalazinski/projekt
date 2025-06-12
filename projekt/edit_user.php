@@ -43,11 +43,22 @@ if (!$uzytkownik) {
         <input type="hidden" name="id" value="<?= $uzytkownik['id'] ?>">
 
         <label>Imię:
-            <input type="text" name="imie" value="<?= htmlspecialchars($uzytkownik['imie']) ?>" required>
+            <input type="text" name="imie" value="<?= htmlspecialchars($uzytkownik['imie']) ?>" required pattern="^[A-Za-zĄĆĘŁŃÓŚŹŻąćęłńóśźż]{2,50}$"
+             title="Imię może zawierać tylko litery, bez cyfr i znaków specjalnych (2–50 znaków)">
         </label><br><br>
 
         <label>Nazwisko:
-            <input type="text" name="nazwisko" value="<?= htmlspecialchars($uzytkownik['nazwisko']) ?>" required>
+            <input type="text" name="nazwisko" value="<?= htmlspecialchars($uzytkownik['nazwisko']) ?>" required pattern="^[A-Za-zĄĆĘŁŃÓŚŹŻąćęłńóśźż]{2,50}$"
+             title="Imię może zawierać tylko litery, bez cyfr i znaków specjalnych (2–50 znaków)">
+        </label><br><br>
+
+        <label>Login:
+             <input type="text" name="login" value="<?= htmlspecialchars($uzytkownik['login'] ?? '') ?>" required>
+            </label><br><br>
+
+        <label>Hasło: 
+            <input type="text" name="haslo" value="<?= htmlspecialchars($uzytkownik['haslo'] ?? '') ?>" required pattern="^(?=.*[A-Z]).{5,}$" 
+		    title="Hasło musi mieć min. 5 znaków i zawierać przynajmniej 1 duża literę">
         </label><br><br>
 
         <label>Rola:
